@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Steel Defect Prediction</title>
+    </head>
+    <body>
+        <h1>Steel Defect Detection</h1>
+        <h3>Upload your sample image here!</h3>
+        <form method="post" action="{{ url_for('preprocessing') }}"
+        enctype = "multipart/form-data">
+            <div class="file-upload-wrapper">
+                <input type="file" id="input-image" class="file-upload" name="image_file"/><br><br>
+                <input type="submit">
+            </div>
+        </form>
+    </body>
+</html>

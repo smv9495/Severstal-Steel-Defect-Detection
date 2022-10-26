@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <label><h2>Input File</h2></label><br>
+        <img src="{{url_for('static', filename='input_img.png')}}"
+        style="width:800px;height:128px;" ><br>
+
+        <label><h2>Output File:</h2></label><br>
+        <img src="{{url_for('static', filename='output_img.png')}}"
+        style="width:800px;height:128px;" ><br>
+
+        <label><h2>Defect Type:</h2></label><br>
+        <img src="{{url_for('static', filename='palette.png')}}"><br>
+
+        <form action="{{url_for('index')}}">
+            <input type="submit" value="Return Home">
+        </form>
+        
+
+    </body>
+</html>
